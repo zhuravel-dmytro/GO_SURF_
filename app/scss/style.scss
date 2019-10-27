@@ -1,7 +1,26 @@
 @import "vars";
 @import "libs";
 @import "fonts";
+@import "global";
 
+.header {}
+
+.heaer__slider {
+    &-item {
+        height             : 100vh;
+        background-image   : url(../img/header_bg.jpg);
+        background-repeat  : no-repeat;
+        background-size    : cover;
+        background-position: center;
+        position           : relative;
+    }
+}
+
+.slider-item__info {
+    position: absolute;
+    right   : 80px;
+    bottom  : 115px;
+}
 
 
 
