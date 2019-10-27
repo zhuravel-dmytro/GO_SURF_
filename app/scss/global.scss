@@ -1,6 +1,7 @@
 body {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
+    font-size  : 16px;
 }
 
 a {
@@ -12,22 +13,29 @@ a {
 .suptitle-left {
     font-size     : 22px;
     line-height   : 32px;
-    text-align    : right;
     letter-spacing: 7.33333px;
     text-transform: uppercase;
-    color         : #FFFFFF;
-    opacity: 0.5;
-    padding-left: 104px;
-    position: relative;
-    &::before{
-        content: '';
-        height: 1px;
-        width: 80px;
-        position: absolute;
+    opacity       : 0.5;
+    padding-left  : 104px;
+    position      : relative;
+    display       : inline-block;
+
+    &::before {
+        content         : '';
+        height          : 1px;
+        width           : 80px;
+        position        : absolute;
         background-color: #fff;
-        opacity: 0.5;
-        left: 0;
-        top: 50%;
+        opacity         : 0.5;
+        left            : 0;
+        top             : 50%;
 
     }
+}
+
+.slider-item__info-text {
+    font-weight: 800;
+    font-size  : 40px;
+    line-height: 86px;
+    text-transform: uppercase;
 }
