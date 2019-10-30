@@ -58,6 +58,18 @@
     }
 }
 
+.animate__line {
+    stroke-dasharray : 600;
+    stroke-dashoffset: 600;
+    animation: animat 5s infinite 6s;
+}
+
+@keyframes animat {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
 .header__title {
     max-width     : 467px;
     position      : absolute;
@@ -78,12 +90,14 @@
     top     : 0;
     z-index : 3;
 }
-.header__arrows{
+
+.header__arrows {
     position: absolute;
-    bottom: 41px;
-    left: 209px;
-    z-index: 3;
+    bottom  : 41px;
+    left    : 209px;
+    z-index : 3;
 }
+
 .heaer__slider {
     &-item {
         height             : 100vh;
