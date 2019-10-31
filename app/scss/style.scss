@@ -61,7 +61,7 @@
 .animate__line {
     stroke-dasharray : 600;
     stroke-dashoffset: 600;
-    animation: animat 5s infinite 6s;
+    animation        : animat 5s infinite 6s;
 }
 
 @keyframes animat {
@@ -196,8 +196,32 @@
     }
 }
 
-.surf{
-    height: 100vh;
+.surf {
+    position: relative;
+}
+
+.surf__title {
+
+
+    span {
+        position: relative;
+        font-weight   : 800;
+        font-size     : 200px;
+        text-transform: uppercase;
+        color         : rgba(#fff, .1);
+    }
+
+    h3 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        font-weight: 800;
+        font-size  : 80px;
+        color      : #fff;
+        // border-top: 1px solid $green;
+
+    }
 }
 
 
