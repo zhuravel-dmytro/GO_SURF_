@@ -1,17 +1,26 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
 body {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 400;
-    font-size  : 16px;
+    font-family     : 'Fira Sans', sans-serif;
+    font-weight     : 400;
+    font-size       : 16px;
     background-color: #000;
-    color: #fff;
+    color           : #fff;
 }
 
 ul,
-li{
-    margin: 0;
-    padding: 0;
+li {
+    margin    : 0;
+    padding   : 0;
     list-style: none;
 }
+
 a {
     text-decoration: none;
     display        : inline-block;
@@ -41,9 +50,55 @@ a {
     }
 }
 
-.slider-item__info-text {
-    font-weight: 800;
-    font-size  : 40px;
-    line-height: 86px;
+.slider-item__info-text,
+.right__info-text {
+    font-weight   : 800;
+    font-size     : 40px;
+    line-height   : 86px;
     text-transform: uppercase;
+
+    .span {
+        font-weight: 100;
+    }
+}
+
+.right__info-text {
+    span {
+        font-weight: 100;
+    }
+}
+
+.surf__title,
+.travel__title,
+.sleep__title,
+.shop__title{
+    span {
+        position      : relative;
+        font-weight   : 800;
+        font-size     : 200px;
+        text-transform: uppercase;
+        color         : rgba(#fff, .05);
+        display       : inline-block;
+        transform     : translateX(-50px);
+    }
+
+    h3 {
+        position   : absolute;
+        top        : 0;
+        right      : 0;
+        margin     : 0;
+        font-weight: 800;
+        font-size  : 80px;
+        color      : #fff;
+
+        &::before {
+            content         : '';
+            background-color: #4AF6CD;
+            position        : absolute;
+            width           : 80px;
+            height          : 1px;
+            top             : 3px;
+            right           : 0;
+        }
+    }
 }
