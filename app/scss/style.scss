@@ -197,21 +197,108 @@
 }
 
 .surf {
-    position: relative;
-    padding: 160px 0 210px;
-    background-image: url(../img/surf-bg.png);
-    background-repeat: no-repeat;
+    position           : relative;
+    padding            : 160px 0 120px;
+    background-image   : url(../img/surf-bg.png);
+    background-repeat  : no-repeat;
     background-position: right 200px;
-    background-size: auto;
+    background-size    : auto;
 }
 
 .right__info {
-    position: absolute;
-    top: 311px;
-    right: 73px;
+    position  : absolute;
+    top       : 311px;
+    right     : 73px;
     text-align: right;
 }
 
+// 2 SECTION
+// SURF SLIDER
+.surf__slider {
+    padding-top: 110px;
 
+    .slider__arrows {
+        top    : 58px;
+        opacity: 0.25;
+    }
+
+    .slick-slide:nth-child(2n) {
+        .surf__box-item {
+            margin-top: 32px;
+        }
+    }
+
+    .slick-slide:nth-child() {
+        .surf__box-item {}
+    }
+
+    .slick-current {
+        .surf__box-inner {
+            background: rgba(#1C2121, .3);
+        }
+
+        .box-btn {
+            display: block;
+        }
+    }
+}
+
+.surf__box-item {
+    // background-image   : url(../img/slide-1.jpg);
+    background-repeat     : no-repeat;
+    background-position   : center;
+    background-size       : cover;
+    // max-width          : 390px;
+}
+
+.surf__box-inner {
+    background   : rgba(#1C2121, .85);
+    min-height   : 750px;
+    // max-width : 390px;
+    position     : relative;
+    &:hover{
+        background: rgba(#1C2121, .3);
+        .box-btn {
+            display: block;
+        }
+    }
+}
+
+.surf__box-text {
+    padding       : 72px 0 0 40px;
+    font-weight   : 800;
+    font-size     : 40px;
+    line-height   : 36px;
+    text-transform: uppercase;
+    max-width     : 110px;
+}
+
+.surf__box-location {
+    transform     : rotate(-90deg);
+    font-size     : 18px;
+    line-height   : 22px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    width         : 0;
+    height        : 0;
+    position      : absolute;
+    left          : 40px;
+    bottom        : 81px;
+    white-space   : nowrap;
+
+    span {
+        font-weight: 100;
+    }
+
+}
+
+.box-btn {
+    position  : absolute;
+    bottom    : 0px;
+    left      : 0px;
+    right     : 0;
+    text-align: center;
+    display   : none;
+}
 
 @import "media";

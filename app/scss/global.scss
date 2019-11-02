@@ -1,3 +1,4 @@
+@import "vars";
 html {
     box-sizing: border-box;
 }
@@ -5,6 +6,10 @@ html {
 *::before,
 *::after{
     box-sizing: inherit;
+}
+:hover{
+    outline: none;
+    transition-delay: .1s;
 }
 body {
     font-family     : 'Fira Sans', sans-serif;
@@ -24,6 +29,7 @@ li {
 a {
     text-decoration: none;
     display        : inline-block;
+    outline: none;
 
 }
 
@@ -99,6 +105,43 @@ a {
             height          : 1px;
             top             : 3px;
             right           : 0;
+        }
+    }
+}
+// BUTTON
+.btn {
+    font-weight   : 800;
+    font-size     : 40px;
+    line-height   : 36px;
+    text-transform: uppercase;
+    color         : #FFFFFF;
+
+    span {
+        background-color: $green;
+        padding         : 17px 57px 15px 17px;
+        display         : inline-block;
+        margin-left     : 19px;
+        position: relative;
+
+        &::before {
+            content         : '';
+            position        : absolute;
+            width           : 20px;
+            height          : 1px;
+            background-color: #fff;
+            top             : 50%;
+            left            : -10px;
+        }
+
+        &::after {
+            content : '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 17px;
+            height: 20px;
+            width: 24px;
+            background-image: url(../img/arrows-right.svg);
         }
     }
 }
