@@ -222,14 +222,16 @@
         opacity: 0.25;
     }
 
-    .slick-slide:nth-child(2n) {
+    .slick-slide:nth-child(4n+1) {
         .surf__box-item {
             margin-top: 32px;
         }
     }
 
-    .slick-slide:nth-child() {
-        .surf__box-item {}
+    .slick-slide:nth-child(4n+3) {
+        .surf__box-item {
+            margin-top: 89px;
+        }
     }
 
     .slick-current {
