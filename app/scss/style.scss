@@ -213,7 +213,17 @@
 }
 
 // 2 SECTION
-// SURF SLIDER
+.surf__map{
+    max-width: 1260px;;
+    min-height: 635px;
+    background-image: url(../img/world-map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+// SURF SLIDER TOP
+// SURF SLIDER BOTTOM
 .surf__slider {
     padding-top: 110px;
 
