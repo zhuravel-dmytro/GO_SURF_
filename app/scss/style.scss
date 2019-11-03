@@ -213,16 +213,79 @@
 }
 
 // 2 SECTION
-.surf__map{
-    max-width: 1260px;;
-    min-height: 635px;
-    background-image: url(../img/world-map.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.surf__map {
+    max-width: 1260px;
+    ;
+    min-height         : 635px;
+    background-image   : url(../img/world-map.png);
+    background-repeat  : no-repeat;
+    background-size    : cover;
     background-position: center;
-    margin: 0 auto;
+    margin             : 0 auto;
 }
-// SURF SLIDER TOP
+
+// SURF SLIDER TOP RIGHT
+.box__slider {
+    background-color: rgba(#0F1010, .7);
+    box-shadow      : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius   : 6px;
+    height          : 216px;
+    width           : 283px;
+    padding         : 46px 40px 13px 31px;
+}
+
+.box__slider-top-row {
+    &_title {
+        font-weight   : 800;
+        font-size     : 18px;
+        line-height   : 26px;
+        text-transform: uppercase;
+    }
+
+    &_text {
+        font-size  : 16px;
+        line-height: 19px;
+        color      : #FFFFFF;
+        padding-top: 14px;
+        position   : relative;
+
+        &:before {
+            content         : '';
+            background-color: $green;
+            height          : 1px;
+            width           : 80px;
+            position        : absolute;
+            top             : 5px;
+            left            : 0;
+        }
+    }
+
+    .slider__arrows {
+        position: absolute;
+        right   : 0;
+        top     : 4px;
+    }
+}
+
+.box__slider-bottom-row {
+    padding-top: 30px;
+    display        : flex;
+    justify-content: space-between;
+
+    &_block {
+        text-align: center;
+        img{
+            display: inline;
+        }
+    }
+
+    .box__slider-block_num {
+        font-weight: 800;
+        font-size  : 16px;
+        line-height: 23px;
+    }
+}
+
 // SURF SLIDER BOTTOM
 .surf__slider {
     padding-top: 110px;
@@ -268,8 +331,10 @@
     min-height   : 750px;
     // max-width : 390px;
     position     : relative;
-    &:hover{
+
+    &:hover {
         background: rgba(#1C2121, .3);
+
         .box-btn {
             display: block;
         }
