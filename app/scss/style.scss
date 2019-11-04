@@ -273,6 +273,16 @@
         top      : 25px;
         transform: translateX(3%);
         outline  : none;
+
+        &::before {
+            border-left  : 11px solid transparent;
+            border-right : 11px solid transparent;
+            border-top   : 19px solid $green;
+            position     : absolute;
+            top          : -9px;
+            border-bottom: none;
+            transform    : translateX(-35px);
+        }
     }
 }
 
@@ -299,6 +309,12 @@
         top      : 25px;
         transform: translateX(-42%);
         outline  : none;
+
+        &::before {
+            top          : -7px;
+            border-top   : 19px solid $green;
+            border-bottom: none;
+        }
     }
 }
 
@@ -334,6 +350,19 @@
     bottom          : 25px;
     transform       : translateX(-42%);
     outline         : none;
+
+    &::before {
+        content      : '';
+        width        : 0;
+        height       : 0;
+        border-left  : 11px solid transparent;
+        border-right : 11px solid transparent;
+        border-bottom: 19px solid $green;
+        position     : absolute;
+        bottom       : -8px;
+        transform    : translateX(92px);
+
+    }
 }
 
 .content-row {
