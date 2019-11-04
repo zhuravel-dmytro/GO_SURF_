@@ -220,8 +220,8 @@
     text-transform: uppercase;
     transform     : rotate(-90deg);
     position      : absolute;
-    top           : 538px;
-    right         : 77px;
+    bottom        : 1188px;
+    right         : 152px;
     width         : 0;
     height        : 0;
     white-space   : nowrap;
@@ -259,6 +259,10 @@
     width           : 24px;
     height          : 24px;
     border-radius   : 50%;
+
+    &:hover {
+        box-shadow: 0px 0px 35px rgba(74, 246, 205, 0.837777);
+    }
 }
 
 .slider_dots--1 {
@@ -268,7 +272,7 @@
     .slider_dots-content {
         top      : 25px;
         transform: translateX(3%);
-        outline         : none;
+        outline  : none;
     }
 }
 
@@ -294,7 +298,7 @@
     .slider_dots-content {
         top      : 25px;
         transform: translateX(-42%);
-        outline         : none;
+        outline  : none;
     }
 }
 
