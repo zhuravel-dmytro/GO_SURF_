@@ -15,18 +15,19 @@ $(function () {
     focusOnSelect: true
   });
 
-  $('.box__slider').slick({
-    slidesToShow: 1,
+  $('.slider__map').slick({
+    slidesToShow: 8,
     slidesToScroll: 1,
     asNavFor: '.surf__slider',
     prevArrow: false,
     nextArrow: false,
-    fade: true,
+    focusOnSelect: true,
   })
   $('.surf__slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    asNavFor: '.box__slider',
+    focusOnSelect: true,
+    asNavFor: '.slider__map',
     prevArrow: '<img class="slider__arrows slider__arrow-left"src="img/arrows-left.svg" alt="arrows-left">',
     nextArrow: '<img class="slider__arrows slider__arrow-right"src="img/arrows-right.svg" alt="arrows-right">',
   })
